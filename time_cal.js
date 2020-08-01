@@ -1,14 +1,30 @@
 'user strict';
 
-document.getElementById('choice').textContent = new Date();
-console.log(document.getElementById('choice').textContent);
+// 開始時刻を取得する
+var startTime = null;
+var displyArea = document.getElementById('display-area');
 
-// 勉強開始時、エンターキーが押されたら
+function start() {
+	startTime = Date.now();
+	console.log('スタートしました。')
+	document.body.onkeydown = stop;
+	console.log(startTime)
+}
 
-// その時刻を取得
+function stop() {
+	console.log('勉強終わりました。')
+// 終了時刻を取得
+	var stopTime = Date.now();
+	console.log (stopTime)
+	var sumTime = stopTime - startTime;
+	console.log(sumTime);
+// 結果を表示
+	displyArea.innerText = sumTime;
+}
+if (confirm('OKを押すと計測が始まります。<br> 終了時に何かキーを押してください。エンターキーは無効です。')) {
+	start();
+}
 
-// 勉強終了時、エンターキーが押されたら、
+// 時間の表示（形式）
 
-// その時間を取得
-
-// 先の時間と計算して、累計時間を計算し、表示
+// ダイアログボックス内で改行できるか
