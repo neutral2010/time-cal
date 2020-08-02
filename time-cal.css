@@ -10,10 +10,11 @@ body *, ::before, ::after {
     box-sizing: border-box;
 }
 body {
-    margin: 0;
+    width: 800px;
+    margin: 0 auto;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 400;
-    background-color: #fff;
+    background-color: rgb(234, 228, 223);;
     color: #000;
 }
 .container {
@@ -29,8 +30,8 @@ body {
     }
 }
 header {
-    background-color: #1aaedb;
-    border-bottom: #ead963 6px solid;
+    background-color: #0D3B66;
+    border-bottom: #ef476f 6px solid;
 }
 header .container {
     min-height: 60px;
@@ -53,7 +54,7 @@ header .container {
 header .container h1,
 header .container h2 {
     margin: 0;
-    color: #fff;
+    color: #fdfffc;
     line-height: 1;
 }
 header .container h1 {
