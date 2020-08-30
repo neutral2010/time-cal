@@ -1,42 +1,123 @@
  /* @charset "UTF-8"; */
 
- body {
-    font-family: 'Courier', monospace;
-    font-size: 14px;
-    background-color: #eee;
+html, body {
+	height: 100%;	
+	margin:0;
+}
+
+body {
+	font-size: 20px;
+	background-color: #eee
+}
+
+header {
+		/* background-color: #1aaedb; */
+		background-color: rgba(99, 95, 95, 0.4);
+    border-bottom: #ead963 6px solid;
 }
 
 .container {
-  margin: 20px auto;
-  width: 270px;
-  background-color: #fff;
-  padding: 15px;
-  text-align: center;
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+
+header .container {
+	height: 90px;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 76px;
+	background-image:url(body_tainai_dokei1.png);
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: 16px 0;	
+}
+
+header .container h1,
+header .container h2 {
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+}
+
+header .container h1 {
+	font-size: 20px;
+	border-bottom: 1px dotted;
+	padding: 15px 0 4px 0;
+	font-weight: 500;
+}
+
+header .container h2 {
+	font-size: 16px;
+	padding: 15px 0 4px 0;
+	font-weight: 400;
 }
 
 #timer {
-    background: #ddd;
-    height: 120px;
-    line-height: 120px;
-    font-size: 40px;
-    margin-bottom: 15px;
+	/* background-color: #fff; */
+	/* border: dotted 1px; */
+	font-family: 'Courier New', monospace; 
+	width: 330px;
+	padding: 15px;
+	text-align: center;
+	margin: 20px auto;
+	height: 100px;
+	line-height: 100px;
+	font-size: 60px;
+}
+
+.all-btn {
+	padding: 15px;
+	width: 330px;
+	margin: auto;
+	background-color: #fff;
+	margin-bottom: 45px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .btn {
-    width: 80px;
-    height: 45px;
-    line-height: 45px;
-    background-color: #ddd;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
+	font-family: 'Courier New', monospace; 
+	font-weight: bold;
+	background-color: #ddd;
+	width: 100px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	cursor: pointer;
+
 }
 
-.controls {
-    display: flex;
-    justify-content: space-between;
+/* .all-btn {
+	width: 330px;
+	margin: auto;
+	background-color: #fff;
+	margin-bottom: 45px;
+	display: flex;
+	justify-content: space-between;
+} */
+
+/* .controls {	
+	display: flex;
+	justify-content: space-between;
+} */
+
+#before-resultarea {
+	text-align: center;
+	font-size: 14px;
 }
 
-.inactive {
-    opacity: 0.6;
+footer {
+	font-size: 12px;
+	border-top: dotted 1px darkslategrey;
+}
+
+footer .container {
+	background-color: #fff;
+	height: 30px;
+	/* width: 330px; */
+}
+
+footer p {
+	text-align: center;
 }

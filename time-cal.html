@@ -2,22 +2,41 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 	<title>累計時間計測アプリ</title>
 	<link rel="stylesheet" href="time-cal.css">
 </head>
+
 <body>
-	<div class="container">
-	<div id="timer">00:00:00</div>
-		<!-- flexboxを使うための親要素を設定 -->
-		<div class="controls">
-			<!-- buttonタグはブラウザごとに独自のデザインがあって、スタイル調整	が難しいのでdivタグにしてbtn classを設定 -->
-			<div class="btn" id="start">Start</div>
-			<div class="btn" id="stop">Stop</div>
-			<div class="btn" id="reset">Reset</div>
+	<header>
+		<div class="container">
+			<h1>累計時間計測アプリ</h1>
+			<h2>どれぐらい時間がかかっているか計ってみよう！</h2>
 		</div>
-	</div>
+	</header>
+	<main>
+		<div class="container">
+		<!-- <div class="result-area"> -->
+			<div id="timer">0:00:00</div> 
+				<!-- flexboxを使うための親要素を設定 -->
+			<div class="controls">
+				<!-- buttonタグはブラウザごとに独自のデザインがあって、スタイル調整が難しいのでdivタグにしてbtn classを設定 -->
+				<div class="all-btn">
+				<div class="btn" id="start">Start</div>
+				<div class="btn" id="stop">Stop</div>
+				<div class="btn" id="reset">Reset</div>
+				</div>
+			</div>
+			<div id="before-resultarea"></div>
+		<!-- </div> -->
+		</div>
+	</main>	
+	<footer>
+		<!-- <div class="container"> -->
+			<p>
+				2020.8.31 「N予備校 動くWebページコンテスト 2020夏」応募作品として作りました。
+			</p>
+		<!-- </div> -->
+	</footer>
 	<script src="time-cal.js"></script>
 </body>
 </html>

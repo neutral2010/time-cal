@@ -6,24 +6,27 @@
 	const start = document.getElementById('start');
 	const stop = document.getElementById('stop');
 	const reset = document.getElementById('reset');
-
+	const beforeResultarea = document.getElementById('before-resultarea')
+	
 	// 再代入される変数の定義（関数外でも使うもの）
 	let startTime;
 	let timeoutId; /* timeout用のId seTimeoutの戻り値として取得できる */
 	let elapsedTime = 0; /* タイマーが走っていた時間 */
 
-	// カウントアップの定義
+	let d, h, m, s = 0;
+
+// カウントアップの定義
 	function countUp () {
 		// 始まり（startTime）からの経過時間
 		// console.log(Date.now() - startTime);
 
 		// 時間表示を分かりやすくするためのDateオブジェクトを変数に代入
-		const d = new Date(Date.now() - startTime + elapsedTime);	
-		const h = String(d.getMinutes()).padStart(2, '0');
-		const m = String(d.getMinutes()).padStart(2, '0');
-		const s = String(d.getSeconds()).padStart(2, '0');
+		 d = new Date(Date.now() - startTime + elapsedTime);	
+		 h = String(d.getHours()).padStart(2, '0');
+		 m = String(d.getMinutes()).padStart(2, '0');
+		 s = String(d.getSeconds()).padStart(2, '0');
 		// const ms = String(d.getMilliseconds()).padStart(3, '0');
-		timer.textContent = `${h}:${m}:${s}`;
+		timer.textContent = `${h-9}:${m}:${s}`;
 
 		// 始まり（startTime）からの経過時間取得を10秒ごとに繰り返す
 		timeoutId = setTimeout(( ) => {
@@ -57,6 +60,10 @@
 
 	// スタートボタンを押した時
 	start.addEventListener('click', () => {
+		while (beforeResultarea.firstChild) {
+			beforeResultarea.removeChild(beforeResultarea.firstChild);
+		}
+		const paragraph = document.createElement('p')
 		if (start.classList.contains('inactive') === true) {
 			return;
 		}
@@ -84,7 +91,13 @@
 			return;
 		}
 		setBottonStateInutual();
-		timer.textContent = '00:00:00';
+		timer.textContent = '0:00:00';
+
+		// beforeResurtnews(); 関数にしようとしたが時間切れ
+		const paragraph = document.createElement('p');
+		paragraph.innerText = `お疲れ様です！直前の累計時間は、${h-9}時間${m}分でした。`;
+		beforeResultarea.appendChild(paragraph);
+
 		elapsedTime = 0;
 	});
 }
