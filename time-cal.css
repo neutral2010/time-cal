@@ -11,8 +11,8 @@ body {
 }
 
 header {
-		background-color: rgba(99, 95, 95, 0.4);
-    border-bottom: #ead963 6px solid ;
+	background-color: rgba(99, 95, 95, 0.4);
+    	border-bottom: #ead963 6px solid ;
 }
 
 .container {
@@ -34,9 +34,9 @@ header .container {
 
 header .container h1,
 header .container h2 {
-    margin: 0;
-    color: #595757;
-    line-height: 1;
+    	margin: 0;
+    	color: #595757;
+    	line-height: 1;
 }
 
 header .container h1 {
@@ -87,7 +87,7 @@ header .container h2 {
 }
 
 .inactive {
-  opacity: 0.6;
+  	opacity: 0.6;
 }
 
 #before-resultarea {
