@@ -74,8 +74,8 @@ header .container h2 {
 	margin-bottom: 45px;
 	display: flex;
 	justify-content: space-between;
+	border-radius: 25px;
 }
-
 .btn {
 	font-family: 'Courier New', monospace; 
 	font-weight: bold;
@@ -85,6 +85,7 @@ header .container h2 {
 	line-height: 45px;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 25px;
 
 }
 
