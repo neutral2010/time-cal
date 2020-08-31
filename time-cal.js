@@ -17,15 +17,11 @@
 
 // カウントアップの定義
 	function countUp () {
-		// 始まり（startTime）からの経過時間
-		// console.log(Date.now() - startTime);
-
 		// 時間表示を分かりやすくするためのDateオブジェクトを変数に代入
 		 d = new Date(Date.now() - startTime + elapsedTime);	
 		 h = String(d.getHours()).padStart(2, '0');
 		 m = String(d.getMinutes()).padStart(2, '0');
 		 s = String(d.getSeconds()).padStart(2, '0');
-		// const ms = String(d.getMilliseconds()).padStart(3, '0');
 		timer.textContent = `${h-9}:${m}:${s}`;
 
 		// 始まり（startTime）からの経過時間取得を10秒ごとに繰り返す
@@ -82,7 +78,6 @@
 		clearTimeout(timeoutId);
 		// ストップをクリックした時間はDate.now()で取得できる。
 		elapsedTime += Date.now( ) - startTime;	
-
 	});
 
 	// リセットボタンを押した時

@@ -11,14 +11,13 @@ body {
 }
 
 header {
-		/* background-color: #1aaedb; */
 		background-color: rgba(99, 95, 95, 0.4);
-    border-bottom: #ead963 6px solid;
+    border-bottom: #ead963 6px solid ;
 }
 
 .container {
 	width: 600px;
-	height: 400px;
+	height: 370px;
 	margin: auto;
 }
 
@@ -30,13 +29,13 @@ header .container {
 	background-image:url(body_tainai_dokei1.png);
 	background-repeat: no-repeat;
 	background-size: 50px;
-	background-position: 16px 0;	
+	background-position: 16px 0;
 }
 
 header .container h1,
 header .container h2 {
     margin: 0;
-    color: #fff;
+    color: #595757;
     line-height: 1;
 }
 
@@ -54,8 +53,6 @@ header .container h2 {
 }
 
 #timer {
-	/* background-color: #fff; */
-	/* border: dotted 1px; */
 	font-family: 'Courier New', monospace; 
 	width: 330px;
 	padding: 15px;
@@ -74,8 +71,9 @@ header .container h2 {
 	margin-bottom: 45px;
 	display: flex;
 	justify-content: space-between;
-	border-radius: 25px;
+	border-radius: 10px;
 }
+
 .btn {
 	font-family: 'Courier New', monospace; 
 	font-weight: bold;
@@ -85,8 +83,11 @@ header .container h2 {
 	line-height: 45px;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 25px;
+	border-radius: 15px;
+}
 
+.inactive {
+  opacity: 0.6;
 }
 
 #before-resultarea {
@@ -96,7 +97,7 @@ header .container h2 {
 
 footer {
 	font-size: 12px;
-	border-top: dotted 1px darkslategrey;
+	border-top: dotted 1px #005555;
 }
 
 footer {
