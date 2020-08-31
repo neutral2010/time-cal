@@ -88,20 +88,6 @@ header .container h2 {
 
 }
 
-/* .all-btn {
-	width: 330px;
-	margin: auto;
-	background-color: #fff;
-	margin-bottom: 45px;
-	display: flex;
-	justify-content: space-between;
-} */
-
-/* .controls {	
-	display: flex;
-	justify-content: space-between;
-} */
-
 #before-resultarea {
 	text-align: center;
 	font-size: 14px;
@@ -112,12 +98,9 @@ footer {
 	border-top: dotted 1px darkslategrey;
 }
 
-footer .container {
-	background-color: #fff;
+footer {
 	height: 30px;
-	/* width: 330px; */
-}
-
-footer p {
-	text-align: center;
+	width: 600px;
+	margin: auto;
+	text-align: right;
 }
